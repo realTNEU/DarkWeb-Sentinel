@@ -15,8 +15,6 @@ export const reportAlert = async (req, res) => {
 
     const alert = new Alert({ userId, identityType, value, source });
     await alert.save();
-
-    // Emit alert to Socket.IO
     req.io.emit(`alert:${userId}`, alert);
 
     res.status(201).json({ msg: "Alert created", alert });

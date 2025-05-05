@@ -21,7 +21,6 @@ export const addIdentity = async (req, res) => {
 
     await identity.save();
 
-    // ✅ Trigger the scraper
     try {
       await axios.get("http://localhost:4000/run-scraper");
       console.log("[+] Scraper triggered after identity added.");

@@ -1,5 +1,3 @@
-// src/components/Dashboard/TimelineCard.jsx
-
 import React from "react";
 
 const TimelineCard = () => {

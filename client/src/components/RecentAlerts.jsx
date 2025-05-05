@@ -8,7 +8,6 @@ const RecentAlerts = ({ token }) => {
   const [alerts, setAlerts] = useState([]);
 
   useEffect(() => {
-    // Initial fetch
     const fetchAlerts = async () => {
       try {
         const res = await fetch("http://localhost:5000/api/alerts/my", {
@@ -25,7 +24,6 @@ const RecentAlerts = ({ token }) => {
 
     fetchAlerts();
 
-    // Socket listener
     socket.on("new_alert", (newAlert) => {
       setAlerts((prev) => [newAlert, ...prev]);
     });

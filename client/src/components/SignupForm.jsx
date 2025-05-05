@@ -1,4 +1,3 @@
-// components/SignupForm.jsx
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -25,7 +24,7 @@ const SignupForm = () => {
       });
 
       const data = await response.json();
-      toast.dismiss(); // remove loading
+      toast.dismiss(); 
 
       if (!response.ok) {
         toast.error(data.msg || "Something went wrong 😞");
@@ -33,7 +32,6 @@ const SignupForm = () => {
       }
 
       toast.success("Account created 🎉");
-      // Optionally redirect to login page here
 
     } catch (err) {
       toast.dismiss();

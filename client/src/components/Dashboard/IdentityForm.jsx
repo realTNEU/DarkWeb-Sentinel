@@ -1,5 +1,3 @@
-// src/components/Dashboard/IdentityForm.jsx
-
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 

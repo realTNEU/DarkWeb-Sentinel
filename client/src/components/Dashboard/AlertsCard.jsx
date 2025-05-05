@@ -1,5 +1,3 @@
-// src/components/Dashboard/AlertsCard.jsx
-
 import React from "react";
 
 const AlertsCard = ({ alerts }) => {

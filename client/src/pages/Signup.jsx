@@ -1,4 +1,3 @@
-// pages/Signup.jsx
 import React from "react";
 import SignupForm from "../components/SignupForm";
 import Header from "../components/Header";
@@ -8,10 +7,8 @@ import ParticlesBackground from "../components/ParticlesBackground";
 const Signup = () => {
   return (
     <div className="relative min-h-screen bg-[#0f0043] overflow-hidden">
-      {/* Background Particles */}
       <ParticlesBackground />
 
-      {/* Overlay Content */}
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
 

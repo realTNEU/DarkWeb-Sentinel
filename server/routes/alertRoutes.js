@@ -5,7 +5,7 @@ import { reportAlert, getUserAlerts } from "../controllers/alertController.js";
 const router = express.Router();
 
 router.post("/report", (req, res, next) => {
-  req.io = req.app.get("io"); // Attach io instance to req
+  req.io = req.app.get("io"); 
   next();
 }, reportAlert);
 

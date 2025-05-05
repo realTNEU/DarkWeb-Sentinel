@@ -13,7 +13,7 @@ export const checkLeakCheck = async (email) => {
     });
 
     if (res.data.success && res.data.found > 0) {
-      return res.data.sources; // Array of breach sources
+      return res.data.sources;
     } else {
       return [];
     }
